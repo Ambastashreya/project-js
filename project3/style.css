@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("casey-horner-4rDCa5hBlCs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.clock{
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.clock div{
+    display: flex;
+    flex-direction: column;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background: slateblue;
+    opacity: 0.8;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: darkblue;
+}
+
+.clock #ampm{
+    width: 60px;
+    height: 30px;
+    background: green;
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+}
